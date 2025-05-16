@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Discover Iceland</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar navigation (desktop only) -->
+    <aside class="sidebar">
+      <h2>Discover Iceland</h2>
+      <nav class="desktop-nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Destinations</a></li>
+          <li><a href="#">Travel Tips</a></li>
+          <li><a href="#">Culture</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <!-- Hero section with hamburger icon -->
+      <header class="hero">
+        <h1>Explore Iceland's Natural Wonders</h1>
+        <div class="menu-icon">&#9776;</div> <!-- Hamburger moved into header -->
+      </header>
+
+      <!-- Popup navigation menu for mobile -->
+      <nav class="popup-nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Destinations</a></li>
+          <li><a href="#">Travel Tips</a></li>
+          <li><a href="#">Culture</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <section class="featured">
+        <div class="card">Image 1</div>
+        <div class="card">Image 2</div>
+        <div class="card">Image 3</div>
+      </section>
+
+      <section class="content">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Duis aute irure dolor in reprehenderit in voluptate velit.
+        </p>
+      </section>
+
+      <footer class="footer">
+        <div>email</div>
+        <div>&copy; 2024</div>
+        <div>Social Media Links</div>
+      </footer>
+    </main>
+  </div>
+
+  <!-- Simple JavaScript to toggle popup nav -->
+  <script>
+    const menuIcon = document.querySelector('.menu-icon');
+    const popupNav = document.querySelector('.popup-nav');
+
+    menuIcon.addEventListener('click', () => {
+      popupNav.style.display = popupNav.style.display === 'block' ? 'none' : 'block';
+    });
+  </script>
+</body>
+</html>
